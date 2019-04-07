@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    height: 100%;
+    }
+
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+    height:100%;
+    margin:0;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction:row;
+  }
+
+  nav > div {
+      max-width:50%;
+      min-width:50%;
+      height:inherit;
+      
+  }
+  
+
+  
+  
+  header {
+    padding: 1% 0;
+  }
+  
+  section {
+    min-height: 30%;
+    padding: 10px;
+    background-color: #bbb;
+    width: 90%;
+    text-align:left;
+
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  .float{
+	position:fixed;
+	width:75px;
+	height:75px;
+	bottom:20px;
+	right:20px;
+	background-color:rgb(1, 15, 12);
+	color:rgb(1, 15, 12);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 10px 10px 30px #999;
+    }
+
+   .my-float{
+	margin-top:22px;
+    }
+
+   main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: center;
+
+    margin: 0;
+    height: 95%;
+    
+    }
+
+   #artID{
+    /* margin:20px;
+    margin-left:40px;
+    margin-right:40px; */
+    padding:100px;
+    margin:20px;
+    width: 80%;
+    text-align:center;
+
+    max-width:660px;
+
+    }
+
+    #bioID{
+        max-height:200px;
+        max-width:750px;
+    }
+
+
+
+   footer {
+    height:5%;
+    margin-bottom:10px;
+    padding-bottom:0px;
+    padding-top:5px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
+    }
+
+    button {
+
+        padding: 0;
+
+        border: 3px inherit solid;
+        font: inherit;
+        color: inherit;
+        border:0;
+        background-color: transparent;
+        /* show a hand cursor on hover; some argue that we
+        should keep the default arrow cursor for buttons */
+        cursor: pointer;
+    }
+
+    #footerinfo > a, span {
+        /* font-size:100%; */
+        max-width: 30%;
+        margin-right: 3px;
+        font-size: 12px;
+
+    }
+
+    
+    @media screen and (min-width: 800px) {
+        /* .option-container #button-container{
+            width:90%;
+            width:750px;
+            max-width:90%;
+        } */
+    
+        .float{
+            position:fixed;
+            width:75px;
+            height:75px;
+            top:10%;
+            right:5%;
+            background-color:rgb(1, 15, 12);
+            color:rgb(1, 15, 12);
+            border-radius:50px;
+            text-align:center;
+            box-shadow: 10px 10px 30px #999;
+            }
+    }
